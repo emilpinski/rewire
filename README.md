@@ -1,5 +1,7 @@
 # Rewire
 
+![Status](https://img.shields.io/badge/Status-Demo-blue)
+
 > Productivity app for people with ADHD — habits, focus timer, AI coach, collaborative work rooms.
 
 ![Screenshot](./screenshot.png)
@@ -60,7 +62,7 @@ npm run dev
 
 ## Status
 
-WIP — staging
+Demo — [rewirev10.vercel.app](https://rewirev10.vercel.app)
 
 ---
 Built by [Emil Piński](https://emilpinski.pl)
