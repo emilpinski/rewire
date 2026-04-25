@@ -66,3 +66,11 @@ Demo — [rewirev10.vercel.app](https://rewirev10.vercel.app)
 
 ---
 Built by [Emil Piński](https://emilpinski.pl)
+
+## Screenshots
+
+![Screenshot 1](docs/screenshots/Zrzut_ekranu_25-4-2026_12644_rewirev10.vercel.app.jpeg)
+![Screenshot 2](docs/screenshots/Zrzut_ekranu_25-4-2026_1265_rewirev10.vercel.app.jpeg)
+![Screenshot 3](docs/screenshots/Zrzut_ekranu_25-4-2026_12741_rewirev10.vercel.app.jpeg)
+![Screenshot 4](docs/screenshots/Zrzut_ekranu_25-4-2026_12815_rewirev10.vercel.app.jpeg)
+![Screenshot 5](docs/screenshots/Zrzut_ekranu_25-4-2026_12843_rewirev10.vercel.app.jpeg)
