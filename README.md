@@ -1,5 +1,8 @@
 # Rewire — Behavioral Change App
 
+![Preview](screenshots/preview.png)
+
+
 > Break bad habits. Build better ones. One drill at a time.
 
 **Status:** Live
