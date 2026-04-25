@@ -55,7 +55,7 @@ npm run dev
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | ✅ |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase public key | ✅ |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase service key (backend) | ✅ |
-| `ANTHROPIC_API_KEY` | Claude AI key (coach) | ✅ |
+| `OPENROUTER_API_KEY` | OpenRouter API key (coach) | ✅ |
 | `NEXT_PUBLIC_APP_URL` | Public application URL | ✅ |
 
 ## Status
