@@ -1,29 +1,66 @@
-# Rewire — Behavioral Change App
+# Rewire
 
-![Preview](screenshots/preview.png)
+> Aplikacja produktywności dla osób z ADHD — nawyki, focus timer, AI coach, wspólna praca w rooms.
 
+![Screenshot](./screenshot.png)
 
-> Break bad habits. Build better ones. One drill at a time.
+## Co to jest
 
-**Status:** Live
+Rewire to PWA (Progressive Web App) zaprojektowana specjalnie dla osób z ADHD. Łączy techniki CBT i terapii skupienia z grywalizacją i wsparciem społecznościowym. Zamiast tradycyjnych list zadań — system "jednej rzeczy", szybkie wygrane (quick wins), timer Pomodoro z AI coachem i rooms do wspólnej pracy w czasie rzeczywistym (body doubling).
+
+Skierowana do dorosłych z ADHD, którzy potrzebują struktury i wsparcia bez przytłaczania interfejsem.
+
+## Funkcje
+
+- **Tryb "jedna rzecz"** — fokus na jednym zadaniu, minimalistyczny UI eliminujący rozproszenia
+- **Quick Wins** — lista małych zadań do odbicia w <5 minut dla budowania dopaminy i momentum
+- **Focus Timer** — Pomodoro z AI coachem który adaptuje czas do stanu energii użytkownika
+- **Rooms (body doubling)** — wspólna praca w czasie rzeczywistym z innymi użytkownikami ADHD
+- **Panic Button** — natychmiastowe ćwiczenia oddechowe i linki do helpline przy overwhelm
+- **AI Roast** — humorystyczna (ale skuteczna) motywacja od AI coacha
+- **Dopamine tracking** — śledzenie dobrego samopoczucia, nagrody, streak heatmap
+- **Brain Dump** — szybkie wyrzucenie myśli bez struktury, porządkowanie później
+- **Kalendarz** — integracja zadań z widokiem dziennym/tygodniowym
+- **Onboarding** — personalizacja do stylu ADHD użytkownika
+- **PWA** — działa offline, instalowalna na iOS/Android
+- **Supabase Auth** — logowanie email/password lub magic link
+
+## Stack
+
+| Warstwa | Technologia |
+|---------|-------------|
+| Frontend | Next.js 16, React 19, TypeScript, Tailwind CSS v4 |
+| Auth | Supabase Auth (SSR) |
+| Baza danych | Supabase (PostgreSQL + RLS) |
+| Animacje | Framer Motion |
+| OG Images | @vercel/og |
+| PWA | Service Worker, Web App Manifest |
+| Deploy | Vercel |
+
+## Uruchomienie
+
+```bash
+git clone https://github.com/emilpinski/rewire
+cd rewire
+npm install
+cp .env.example .env.local
+# Uzupelnij zmienne srodowiskowe
+npm run dev
+```
+
+## Zmienne środowiskowe
+
+| Zmienna | Opis | Wymagana |
+|---------|------|----------|
+| `NEXT_PUBLIC_SUPABASE_URL` | URL projektu Supabase | ✅ |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Klucz publiczny Supabase | ✅ |
+| `SUPABASE_SERVICE_ROLE_KEY` | Klucz serwisowy (backend) | ✅ |
+| `ANTHROPIC_API_KEY` | Klucz Claude AI (coach) | ✅ |
+| `NEXT_PUBLIC_APP_URL` | Publiczny URL aplikacji | ✅ |
+
+## Status
+
+WIP — staging
 
 ---
-
-## What it does
-
-- Micro-drills for improving focus and sustained attention
-- Task decomposition: large goals auto-split into 5-minute actionable steps
-- Gamified habit tracking with streaks, dopamine rewards, and achievement badges
-- Support for breaking addictions through structured daily routines
-- Energy-aware task suggestions matching current capacity (high/low energy modes)
-
-## How it works
-
-- **Micro-step engine**: Users input large tasks which are split into timed 5-min steps with completion tracking and dopamine reward animations on finish
-- **Local-first state**: All task data stored in localStorage via custom state hook with auto-save; optional Supabase cloud sync for stats and achievements
-- **Gamification layer**: Pomodoro counter, daily streak tracking with Streak Freeze powerup, achievement badges unlocked at milestones, weekly review summaries
-- **ADHD-optimized UX**: Fast visual feedback via toast notifications, reward screens on task completion, Framer Motion animations for engagement
-
-## Tech Stack
-
-![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
+Built by [Emil Piński](https://emilpinski.pl)
