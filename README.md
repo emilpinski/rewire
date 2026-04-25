@@ -4,7 +4,7 @@
 
 > Productivity app for people with ADHD — habits, focus timer, AI coach, collaborative work rooms.
 
-![Screenshot](./screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/emilpinski/rewire/main/docs/screenshots/Zrzut_ekranu_25-4-2026_12644_rewirev10.vercel.app.jpeg)
 
 ## What is it
 
