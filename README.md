@@ -67,8 +67,8 @@ Built by [Emil Piński](https://emilpinski.pl)
 
 ## Screenshots
 
-![Onboarding screen](docs/screenshots/Zrzut_ekranu_25-4-2026_12644_rewirev10.vercel.app.jpeg)
-![One thing focus mode](docs/screenshots/Zrzut_ekranu_25-4-2026_1265_rewirev10.vercel.app.jpeg)
-![Focus timer with AI coach](docs/screenshots/Zrzut_ekranu_25-4-2026_12741_rewirev10.vercel.app.jpeg)
-![Dopamine tracker and streaks](docs/screenshots/Zrzut_ekranu_25-4-2026_12815_rewirev10.vercel.app.jpeg)
-![Brain dump view](docs/screenshots/Zrzut_ekranu_25-4-2026_12843_rewirev10.vercel.app.jpeg)
+![Onboarding screen](docs/screenshots/onboarding-screen.jpeg)
+![One thing focus mode](docs/screenshots/one-thing-focus-mode.jpeg)
+![Focus timer with AI coach](docs/screenshots/focus-timer-ai-coach.jpeg)
+![Dopamine tracker and streaks](docs/screenshots/dopamine-tracker-streaks.jpeg)
+![Brain dump view](docs/screenshots/brain-dump-view.jpeg)
