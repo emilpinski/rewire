@@ -1,6 +1,6 @@
 # Rewire
 
-![Status](https://img.shields.io/badge/Status-Demo-blue)
+![Status](https://img.shields.io/badge/Status-Open%20Beta-orange)
 
 > ADHD productivity app — focus timer, habit tracking, AI coach, collaborative work rooms.
 
@@ -35,9 +35,30 @@ Rewire is a PWA (Progressive Web App) designed specifically for people with ADHD
 
 **Tooling:** @vercel/og (social preview images)
 
+## Privacy
+
+Brain Dump and Dopamine Tracking handle sensitive personal data. Our approach:
+
+- **Encryption at rest**: all user data encrypted by Supabase (AES-256)
+- **No AI training**: your journal entries and focus logs are never used to train any model
+- **Data export**: export all your data as JSON at any time from Settings
+- **Deletion**: full account and data deletion available from Settings, processed within 24 hours
+- **No third-party analytics** on the journaling or tracking pages
+- **Subprocessors**: Supabase (PostgreSQL, Auth), Vercel (hosting), Anthropic via OpenRouter (AI Coach inference only, no data retention)
+
+## Architecture notes
+
+**Real-time Body Doubling rooms**: Supabase Realtime broadcast channels for presence and chat. Optional video via WebRTC (simple-peer). Room state machine: open -> filling -> in-session -> ended. Capacity: 2-8 participants per room.
+
+**AI Coach**: Claude Haiku via OpenRouter. System prompt grounds responses in CBT and ACT principles. The coach does not provide medical advice. If a user mentions self-harm or crisis, the response immediately surfaces emergency contacts: Telefon Zaufania 116 123 and emergency services 112.
+
+**PWA offline**: One-Thing Mode, Focus Timer, and Brain Dump work fully offline via Service Worker. Data syncs to Supabase when connection is restored.
+
 ## Status
 
-Demo — [rewirev10.vercel.app](https://rewirev10.vercel.app)
+Open Beta - [rewirev10.vercel.app](https://rewirev10.vercel.app)
+Available features: One-Thing Mode, Quick Wins, Focus Timer, Brain Dump, Dopamine Tracking.
+In development: Body Doubling rooms (real-time presence), AI Coach with episodic memory.
 
 ---
 Built by [Emil Piński](https://emilpinski.pl)
